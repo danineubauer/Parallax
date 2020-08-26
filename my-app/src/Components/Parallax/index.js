@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import Plx from 'react-plx';
+import React, { Component } from "react";
+import Plx from "react-plx";
+import ParallaxComponent from "../ParallaxComponent";
 
 // An array of parallax effects to be applied - see below for detail
 const parallaxData = [
@@ -10,7 +11,7 @@ const parallaxData = [
       {
         startValue: 0,
         endValue: 2,
-        property: 'blur',
+        property: "blur",
       },
     ],
   },
@@ -24,7 +25,7 @@ const parallaxData2 = [
       {
         startValue: 0,
         endValue: 100,
-        property: 'skew',
+        property: "skew",
       },
     ],
   },
@@ -37,7 +38,7 @@ const parallaxData3 = [
       {
         startValue: 0,
         endValue: 100,
-        property: 'rotate',
+        property: "rotate",
       },
     ],
   },
@@ -50,7 +51,7 @@ const parallaxData4 = [
       {
         startValue: 0,
         endValue: 4,
-        property: 'scale',
+        property: "scale",
       },
     ],
   },
@@ -61,105 +62,102 @@ const parallaxData5 = [
     end: 100,
     properties: [
       {
-        startValue: '#3cb99c',
-        endValue: 'rgba(50,50,200,0.8)',
-        property: 'backgroundColor',
+        startValue: "#3cb99c",
+        endValue: "rgba(50,50,200,0.8)",
+        property: "backgroundColor",
       },
     ],
   },
 ];
 
-
 export default class Example extends Component {
   render() {
     return (
       <>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData }
-      >
-        <h1>Blur</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData3 }
-      >
-        <h1>Rotate</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData4 }
-      >
-        <h1>Scale</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData5 }
-      >
-        <h1>Color</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-      <Plx
-        className='MyAwesomeParallax'
-        parallaxData={ parallaxData2 }
-      >
-        <h1>Skew to left</h1>
-      </Plx>
-    
-    </>
+        <ParallaxComponent
+          start="0"
+          end="3"
+          startValue="#3cb99c"
+          endValue="rgba(50,50,200,0.8)"
+          property="backgroundColor"
+          title="hello"
+        />
+
+        <ParallaxComponent
+          start="0"
+          end="5"
+          startValue="0"
+          endValue="4"
+          property="scale"
+          title="title"
+        />
+
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData}>
+          <h1>Blur</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+
+        <ParallaxComponent
+          start="0"
+          end="100"
+          startValue="10"
+          endValue="100"
+          property="rotate"
+          title="hello"
+        />
+
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData3}>
+          <h1>Rotate</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData4}>
+          <h1>Scale</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData5}>
+          <h1>Color</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx className="MyAwesomeParallax" parallaxData={parallaxData2}>
+          <h1>Skew to left</h1>
+        </Plx>
+        <Plx
+          className="MyAwesomeParallax"
+          parallaxData={{
+            start: 0,
+            end: 100,
+            properties: [
+              {
+                startValue: "#3cb99c",
+                endValue: "rgba(50,50,200,0.8)",
+                property: "backgroundColor",
+              },
+            ],
+          }}
+        >
+          <h1>Skew to left</h1>
+        </Plx>
+      </>
     );
   }
 }
