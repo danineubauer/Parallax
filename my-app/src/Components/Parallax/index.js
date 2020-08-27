@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Plx from "react-plx";
 import ParallaxComponent from "../ParallaxComponent";
+import Container from "../Container";
 
 // An array of parallax effects to be applied - see below for detail
 const parallaxData = [
@@ -77,8 +78,8 @@ export default class Example extends Component {
         <ParallaxComponent
           start="0"
           end="3"
-          startValue="#3cb99c"
-          endValue="rgba(50,50,200,0.8)"
+          startValue="#B6DCE1"
+          endValue="F5D9CF"
           property="backgroundColor"
           title="hello"
         />
